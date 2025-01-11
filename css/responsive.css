@@ -10,6 +10,91 @@
   } */
 
   /* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+  .trigram {
+    display: none;
+  }
+
+  .top-navigation ul {
+    width: 247px;
+    height: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .top-navigation ul li {
+    flex: 1;
+    text-align: center;
+  }
+
+  .top-navigation ul li:first-child {
+    text-align: left;
+  }
+
+  .top-navigation ul li:nth-child(2) {
+    text-align: center;
+  }
+
+  .top-navigation ul li:last-child {
+    text-align: right;
+  }
+
+  .top-navigation ul li:nth-child(3) {
+    display: none;
+  }
+
+  .top-navigation ul li:hover {
+    color: #333;
+  }
+
+  section .content .section-info h1 {
+    font-weight: 700;
+  }
+
+  .content-vertical .subtext {
+    margin-bottom: 20px;
+  }
+
+  .surrounded-header {
+    height: 46px;
+  }
+
+  .footer-contacts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  } 
+
+  footer .social-icons .facebook:hover .icon,
+  footer .social-icons .twitter:hover .icon,
+  footer .social-icons .instagram:hover .icon,
+  footer .social-icons .linked-in:hover .icon {
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  footer .social-icons .facebook:hover span,
+  footer .social-icons .twitter:hover span,
+  footer .social-icons .instagram:hover span,
+  footer .social-icons .linked-in:hover span {
+    color: #ffffff;
+    background-color: #000000;
+  }
+
+  footer .footer-contacts a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+
+  .footer-footer {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 24px; 
+  }
 }
 
 /* 👇👇👇 Add the media rule and the styles that are common within the TABLET and MOBILE views beneath 👇👇👇 */
