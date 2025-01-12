@@ -79,6 +79,14 @@
     font-weight: 400;
   }
 
+  .content-vertical .portfolio-list .portfolio-item:nth-child(2) {
+    order: 3;
+  }
+
+  .content-vertical .portfolio-list .portfolio-item:nth-child(3) {
+    order: 2;
+  }
+
   .surrounded-header {
     line-height: 46px;
     font-size: 40px;
@@ -199,20 +207,67 @@
     }
 
     .content-vertical .section-info p {
-      /* width: 588px;
-      height: 72px; */
+      width: 708px;
+      height: 72px;
+      padding: 0;
       color: #404040;
     }
 
     .portfolio-list {
       display: flex;
       flex-direction: column;
+      width: 100%;
     }
 
     .content-vertical .portfolio-list .portfolio-item {
       display: flex;
       flex-direction: row;
-      gap: 20px;
+      gap: 30px;
+      height: 140px;
+      width: 100%;
+      align-items: flex-start;
+    }
+
+    .content-vertical .portfolio-list .portfolio-item .portfolio-img-wrapper {
+      display: flex;
+      justify-content: flex-start;
+      width: 200px;
+      height: 140px;
+      object-fit: cover;
+      flex: 0 0 auto;
+    }
+
+    .content-vertical .portfolio-list .portfolio-item .portfolio-item-info {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .content-vertical .portfolio-list .portfolio-item .item-title {
+      font-weight: 400;
+      line-height: 30px;
+    }
+
+    .content-vertical .portfolio-list .portfolio-item .portfolio-item-info {
+      gap: 10px;
+    }
+
+    .content-vertical .portfolio-list .portfolio-item .item-description {
+      line-height: 24px;
+      font-size: 14px;
+      height: 72px;
+    }
+
+    .teammates-content .section-info .surrounded-header {
+      font-size: 40px;
+      line-height: 46px;
+      gap: 10px;
+    }
+
+    .teammates-content .section-info .subtext {
+      width: 600px;
+      height: 48px;
+      color: #969696;
     }
   }
 
