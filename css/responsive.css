@@ -10,7 +10,12 @@
   } */
 
   /* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  .header-content .logo span {
+    text-transform: capitalize;
+    font-weight: 400;
+    line-height: 27.6px;
+    font-size: 24px;
+  }
 
   .trigram {
     display: none;
@@ -53,12 +58,76 @@
     font-weight: 700;
   }
 
+  section .content .section-info p {
+    font-weight: 400;
+    color: #404040;
+    height: 48px;
+    width: 1020px;
+  }
+
   .content-vertical .subtext {
     margin-bottom: 20px;
+    font-weight: 400;
+  }
+
+  .portfolio-item-info .item-title {
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  .portfolio-item-info .item-description {
+    font-weight: 400;
   }
 
   .surrounded-header {
-    height: 46px;
+    line-height: 46px;
+    font-size: 40px;
+    font-weight: 400;
+  }
+
+  .teammates-list-wrapper {
+    height: 251px;
+    display: flex;
+  }
+
+  section .content .section-info .subtext {
+    line-height: 24px;
+    font-size: 16px;
+    width: 720px;
+    height: 48px;
+    color: #969696;
+  }
+
+  .teammate {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .teammate img {
+    width: 163.5px;
+    height: 163px;
+    object-fit: contain;
+  }
+
+  .teammates-list:before,
+  .teammates-list:after {
+    font-family: Font Awesome 6 Free;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 24px;
+    height: 24px;
+  }
+
+  .teammate-data .teammate-social-icons .facebook:hover,
+  .teammate-data .teammate-social-icons .twitter:hover,
+  .teammate-data .teammate-social-icons .instagram:hover {
+    background-color: #969696;
   }
 
   .footer-contacts {
@@ -88,6 +157,10 @@
     text-decoration: underline;
   }
 
+  footer .footer-content .footer-contacts h3 {
+    line-height: 16.1px;
+  }
+
   .footer-footer {
     width: 600px;
     display: flex;
@@ -98,5 +171,49 @@
 }
 
 /* 👇👇👇 Add the media rule and the styles that are common within the TABLET and MOBILE views beneath 👇👇👇 */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .header-content .logo span {
+      text-transform: capitalize;
+      font-weight: 400;
+      line-height: 27.6px;
+      font-size: 24px;
+    }
+
+    .header-content {
+      padding: 10px 30px;
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .top-navigation ul {
+      display: none;
+    }
+
+    .content-vertical {
+      gap: 80px;
+    }
+
+    .content-vertical .section-info h1 {
+      line-height: 73.59px;
+      width: 588px;
+    }
+
+    .content-vertical .section-info p {
+      /* width: 588px;
+      height: 72px; */
+      color: #404040;
+    }
+
+    .portfolio-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content-vertical .portfolio-list .portfolio-item {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
 
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
