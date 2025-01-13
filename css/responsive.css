@@ -399,3 +399,42 @@
   }
 
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
+@media (min-width: 360px) and (max-width: 767px) {
+  
+  .header-content .logo span {
+    text-transform: capitalize;
+    font-weight: 400;
+    line-height: 27.6px;
+    font-size: 24px;
+  }
+
+  .header-content {
+    padding: 10px 16px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  .top-navigation ul {
+    display: none;
+  }
+
+  .portfolio-content {
+    padding: 40px 16px 0;
+  }
+
+  .content-vertical .section-info h1 {
+    width: 285px;
+    padding: 0;
+  }
+
+  .portfolio-content .section-info .subtext {
+    width: 328px;
+    height: 144px;
+    padding: 0;
+    font-weight: 510;
+    text-align: center;
+    font-family: 'SF Pro', sans-serif;
+    display: flex;
+    align-items: center;
+    color: #404040;
+  }
+}
