@@ -121,7 +121,6 @@
 
   .teammates-list:before,
   .teammates-list:after {
-    font-family: Font Awesome 6 Free;
     font-size: 24px;
     font-weight: 900;
     line-height: 24px;
@@ -142,7 +141,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-  } 
+  }
 
   footer .social-icons .facebook:hover .icon,
   footer .social-icons .twitter:hover .icon,
@@ -174,233 +173,219 @@
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    padding-top: 24px; 
+    padding-top: 24px;
   }
 }
 
 /* 👇👇👇 Add the media rule and the styles that are common within the TABLET and MOBILE views beneath 👇👇👇 */
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    .header-content .logo span {
-      text-transform: capitalize;
-      font-weight: 400;
-      line-height: 27.6px;
-      font-size: 24px;
-    }
-
-    .header-content {
-      padding: 10px 30px;
-      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-    }
-
-    .top-navigation ul {
-      display: none;
-    }
-
-    .content-vertical {
-      gap: 80px;
-    }
-
-    .content-vertical .section-info h1 {
-      line-height: 73.59px;
-      width: 588px;
-    }
-
-    .content-vertical .section-info p {
-      width: 708px;
-      height: 72px;
-      padding: 0;
-      color: #404040;
-    }
-
-    .portfolio-list {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-
-    .content-vertical .portfolio-list .portfolio-item {
-      display: flex;
-      flex-direction: row;
-      gap: 30px;
-      height: 140px;
-      width: 100%;
-      align-items: flex-start;
-    }
-
-    .content-vertical .portfolio-list .portfolio-item .portfolio-img-wrapper {
-      display: flex;
-      justify-content: flex-start;
-      width: 200px;
-      height: 140px;
-      object-fit: cover;
-      flex: 0 0 auto;
-    }
-
-    .portfolio-img-wrapper img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .content-vertical .portfolio-list .portfolio-item .portfolio-item-info {
-      display: flex;
-      flex-direction: column;
-      flex-grow: 1;
-    }
-
-    .content-vertical .portfolio-list .portfolio-item .item-title {
-      font-weight: 400;
-      line-height: 30px;
-    }
-
-    .content-vertical .portfolio-list .portfolio-item .portfolio-item-info {
-      gap: 10px;
-    }
-
-    .content-vertical .portfolio-list .portfolio-item .item-description {
-      line-height: 24px;
-      font-size: 14px;
-      height: 72px;
-    }
-
-    .teammates-content .section-info .surrounded-header {
-      font-size: 40px;
-      line-height: 46px;
-      gap: 10px;
-    }
-
-    .teammates-content .section-info .subtext {
-      width: 600px;
-      height: 48px;
-      color: #969696;
-    }
-
-    .teammates-content .teammates-list .teammates-list-wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px;
-      box-sizing: border-box;
-      justify-content: center;
-      width: 100%;
-    }
-
-    .teammates-list .teammates-list-wrapper .teammate {
-      width: 334px !important;
-      height: 324px;
-      flex: 0 0 334px;
-      box-sizing: border-box;
-    }
-
-    .teammate-img-wrapper {
-      width: 334px;
-      height: 230px;
-      overflow: hidden;
-    }
-
-    .teammate-img-wrapper img {
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-      object-position: center;
-    }
-
-    .teammate-data {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      width: 100%;
-    }
-
-    .teammates-list-wrapper .teammate .teammate-data .teammate-name {
-      color: #1f1f1f;
-    }
-
-    .teammate-data .teammate-social-icons .facebook,
-    .teammate-data .teammate-social-icons .twitter,
-    .teammate-data .teammate-social-icons .instagram {
-      background-color: #969696;
-    }
-
-    .teammate-data .teammate-social-icons .facebook:hover,
-    .teammate-data .teammate-social-icons .twitter:hover,
-    .teammate-data .teammate-social-icons .instagram:hover {
-      background-color: #d9d9d9;
-    }
-
-    .teammates-list::after,
-    .teammates-list::before {
-      display: none;
-    }
-
-    .footer-content .social-icons .facebook span,
-    .footer-content .social-icons .twitter span,
-    .footer-content .social-icons .instagram span,
-    .footer-content .social-icons .linked-in span {
-      display: none;
-    }
-
-    footer .social-icons {
-      display: flex;
-      width: 30px;
-      gap: 30px;
-    }
-
-    footer .social-icons .facebook .icon,
-    footer .social-icons .twitter .icon,
-    footer .social-icons .instagram .icon,
-    footer .social-icons .linked-in .icon {
-      color: #000000;
-      background-color: #ffffff;
-    }
-
-    footer .social-icons .facebook:hover .icon,
-    footer .social-icons .twitter:hover .icon,
-    footer .social-icons .instagram:hover .icon,
-    footer .social-icons .linked-in:hover .icon {
-      background-color: #969696;
-    }
-
-    footer .footer-contacts {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .footer-contacts .address,
-    .footer-contacts .email {
-      flex: 1;
-      margin: 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    .footer-contacts .phones {
-      width: 100%;
-      text-align: center;
-    }
-
-    footer .footer-contacts .address,
-    footer .footer-contacts .email,
-    footer .footer-contacts .phones {
-      gap: 10px;
-    }
-
-    footer .footer-contacts .address p {
-      width: 182px;
-    }
-
-    footer .footer-contacts ul li a {
-      color: #ffffff;
-    }
+  .header-content .logo span {
+    text-transform: capitalize;
+    font-weight: 400;
+    line-height: 27.6px;
+    font-size: 24px;
   }
+
+  .header-content {
+    padding: 10px 30px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  .top-navigation ul {
+    display: none;
+  }
+
+  .content-vertical {
+    gap: 80px;
+  }
+
+  .content-vertical .section-info h1 {
+    line-height: 73.59px;
+    width: 588px;
+  }
+
+  .content-vertical .section-info p {
+    width: 708px;
+    height: 72px;
+    padding: 0;
+    color: #404040;
+  }
+
+  .portfolio-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .content-vertical .portfolio-list .portfolio-item {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    height: 140px;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .content-vertical .portfolio-list .portfolio-item .portfolio-img-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    width: 200px;
+    height: 140px;
+    object-fit: cover;
+    flex: 0 0 auto;
+  }
+
+  .portfolio-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .content-vertical .portfolio-list .portfolio-item .portfolio-item-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .content-vertical .portfolio-list .portfolio-item .item-title {
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .content-vertical .portfolio-list .portfolio-item .portfolio-item-info {
+    gap: 10px;
+  }
+
+  .content-vertical .portfolio-list .portfolio-item .item-description {
+    line-height: 24px;
+    font-size: 14px;
+    height: 72px;
+  }
+
+  .teammates-content .section-info .surrounded-header {
+    font-size: 40px;
+    line-height: 46px;
+    gap: 10px;
+  }
+
+  .teammates-content .section-info .subtext {
+    width: 600px;
+    height: 48px;
+    color: #969696;
+  }
+
+  .teammates-content .teammates-list .teammates-list-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    box-sizing: border-box;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .teammates-list .teammates-list-wrapper .teammate {
+    width: 334px !important;
+    height: 324px;
+    flex: 0 0 334px;
+    box-sizing: border-box;
+  }
+
+  .teammate-img-wrapper {
+    width: 334px;
+    height: 230px;
+    overflow: hidden;
+  }
+
+  .teammate-img-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .teammate-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .teammates-list-wrapper .teammate .teammate-data .teammate-name {
+    color: #1f1f1f;
+  }
+
+  .teammate-data .teammate-social-icons .facebook,
+  .teammate-data .teammate-social-icons .twitter,
+  .teammate-data .teammate-social-icons .instagram {
+    background-color: #969696;
+  }
+
+  .teammates-list::after,
+  .teammates-list::before {
+    display: none;
+  }
+
+  .footer-content .social-icons .facebook span,
+  .footer-content .social-icons .twitter span,
+  .footer-content .social-icons .instagram span,
+  .footer-content .social-icons .linked-in span {
+    display: none;
+  }
+
+  footer .social-icons {
+    display: flex;
+    width: 30px;
+    gap: 30px;
+  }
+
+  footer .social-icons .facebook .icon,
+  footer .social-icons .twitter .icon,
+  footer .social-icons .instagram .icon,
+  footer .social-icons .linked-in .icon {
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  footer .footer-contacts {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .footer-contacts .address,
+  .footer-contacts .email {
+    flex: 1;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-contacts .phones {
+    width: 100%;
+    text-align: center;
+  }
+
+  footer .footer-contacts .address,
+  footer .footer-contacts .email,
+  footer .footer-contacts .phones {
+    gap: 10px;
+  }
+
+  footer .footer-contacts .address p {
+    width: 182px;
+  }
+
+  footer .footer-contacts ul li a {
+    color: #ffffff;
+  }
+}
 
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
 @media (min-width: 360px) and (max-width: 767px) {
-  
   .header-content .logo span {
     text-transform: capitalize;
     font-weight: 400;
@@ -427,14 +412,161 @@
   }
 
   .portfolio-content .section-info .subtext {
-    width: 328px;
+    width: 344px;
     height: 144px;
     padding: 0;
     font-weight: 510;
     text-align: center;
-    font-family: 'SF Pro', sans-serif;
+    font-family: "SF Pro", sans-serif;
     display: flex;
     align-items: center;
     color: #404040;
+  }
+
+  .portfolio-content .portfolio-list {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .content-vertical .portfolio-list .portfolio-item:nth-child(1) {
+    order: 1;
+  }
+
+  .content-vertical .portfolio-list .portfolio-item {
+    gap: 10px;
+  }
+
+  .content-vertical .portfolio-list .portfolio-item .portfolio-item-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .content-vertical
+    .portfolio-list
+    .portfolio-item
+    .portfolio-item-info
+    .item-title {
+    font-weight: 510;
+    font-family: "SF Pro", sans-serif;
+    line-height: 30px;
+  }
+
+  .content-vertical
+    .portfolio-list
+    .portfolio-item
+    .portfolio-item-info
+    .item-description {
+    text-align: center;
+    font-weight: 510;
+    font-family: "SF Pro", sans-serif;
+    line-height: 23px;
+    width: 301.33px;
+    height: 115px;
+  }
+
+  .teammates-content {
+    padding-top: 40px;
+  }
+
+  .teammates-content .section-info .surrounded-header {
+    gap: 10px;
+    font-size: 40px;
+    line-height: 46px;
+    white-space: nowrap;
+    padding: 0;
+  }
+
+  .teammates-content .section-info .subtext {
+    width: 334px;
+    height: 96px;
+    font-weight: 510;
+    padding: 0 30px 0 16px;
+    font-family: "SF Pro", sans-serif;
+  }
+
+  .teammates-content {
+    gap: 40px;
+    padding: 40px 0;
+  }
+
+  .teammates-content .teammates-list .teammates-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+  }
+
+  .teammates-list-wrapper .teammate {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #969696;
+    gap: 0;
+  }
+
+  .teammates-list-wrapper .teammate .teammate-img-wrapper {
+    width: 162px;
+    height: 100%;
+    overflow: hidden;
+    padding: 16px;
+  }
+
+  .teammates-list-wrapper .teammate .teammate-img-wrapper img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+  }
+
+  .teammates-list-wrapper .teammate .teammate-data {
+    gap: 24px;
+    padding: 16px;
+    flex: 1;
+    justify-content: center;
+    font-family: "SF Pro", sans-serif;
+  }
+
+  .teammates-list-wrapper .teammate .teammate-data .teammate-social-icons {
+    gap: 16px;
+  }
+
+  .teammates-list::after,
+  .teammates-list::before {
+    display: none;
+  }
+
+  .teammate-data .teammate-social-icons .facebook,
+  .teammate-data .teammate-social-icons .twitter,
+  .teammate-data .teammate-social-icons .instagram {
+    background-color: #969696;
+  }
+
+  .footer-content .social-icons {
+    display: flex;
+    flex-direction: column;
+    width: 126px;
+    color: #ffffff;
+  }
+
+  .footer-content .social-icons span {
+    font-weight: 700;
+    line-height: 16px;
+    font-family: "SF Pro", sans-serif;
+  }
+
+  .footer-content .social-icons .icon {
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  .footer-content .footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 16px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-content .footer-contacts ul li a {
+    color: #ffffff;
   }
 }
